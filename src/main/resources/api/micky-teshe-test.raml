@@ -1,0 +1,24 @@
+#%RAML 1.0
+title: micky-teshe-test
+
+types:
+  newtype:
+    type: any
+
+/micky:
+  get:
+    headers:
+      userName:
+        description: This is retrieveing of data from DB
+        required: false
+        type: string
+      password:
+        description: This is retrieveing of data from DB
+        required: false
+        type: any
+    responses:
+      200:
+        body:
+          application/json:
+            example: 
+              {"message": "we recieved the rsponse successfully!!"}
